@@ -19,12 +19,11 @@ use Sitegeist\ArtClasses\Domain\Interpretation\ImageInterpretation;
 final class GoogleCloudVisionInterpreter implements ImageInterpreterInterface
 {
     public function __construct(
-        private readonly string $apiKey
+        private readonly string $credentialsFilePath,
     ) {
     }
 
     public function interpretImage(Image $image, ?Locale $targetLocale): ImageInterpretation
     {
-        $client = new \Google\Client();
     }
 }

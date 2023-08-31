@@ -3,4 +3,4 @@ Sitegeist\ArtClasses\Domain\Interpretation\ImageInterpreterInterface:
   factoryMethodName: create
   arguments:
     1:
-      setting: Sitegeist.ArtClasses.GoogleCloudVisionInterpreter.apiKey
+      setting: Sitegeist.ArtClasses.GoogleCloudVisionInterpreter.credentialsFilePath

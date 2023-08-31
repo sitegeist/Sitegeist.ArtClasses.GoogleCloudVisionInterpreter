@@ -8,7 +8,6 @@ declare(strict_types=1);
 
 namespace Sitegeist\ArtClasses\GoogleCloudVisionInterpreter\Domain;
 
-use GuzzleHttp\Psr7\Uri;
 use Neos\Flow\Annotations as Flow;
 
 /**
@@ -18,12 +17,10 @@ use Neos\Flow\Annotations as Flow;
 final class GoogleCloudVisionInterpreterFactory
 {
     public function create(
-        string $endpointBaseUri,
-        string $subscriptionKey
+        string $credentialsFilePath
     ): GoogleCloudVisionInterpreter {
         return new GoogleCloudVisionInterpreter(
-            new Uri($endpointBaseUri),
-            $subscriptionKey
+            $credentialsFilePath
         );
     }
 }
