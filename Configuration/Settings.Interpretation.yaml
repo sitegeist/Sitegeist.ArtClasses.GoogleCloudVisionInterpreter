@@ -1,0 +1,6 @@
+Sitegeist:
+  ArtClasses:
+    GoogleCloudVisionInterpreter:
+      # The absolute path to the JSON credentials file. See https://github.com/googleapis/google-cloud-php/blob/main/AUTHENTICATION.md
+      credentialsFilePath: ''
+      minimumScore: 0.9

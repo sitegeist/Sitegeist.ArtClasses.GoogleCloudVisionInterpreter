@@ -4,3 +4,5 @@ Sitegeist\ArtClasses\Domain\Interpretation\ImageInterpreterInterface:
   arguments:
     1:
       setting: Sitegeist.ArtClasses.GoogleCloudVisionInterpreter.credentialsFilePath
+    2:
+      setting: Sitegeist.ArtClasses.GoogleCloudVisionInterpreter.minimumScore

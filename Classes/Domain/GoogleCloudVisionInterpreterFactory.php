@@ -17,10 +17,12 @@ use Neos\Flow\Annotations as Flow;
 final class GoogleCloudVisionInterpreterFactory
 {
     public function create(
-        string $credentialsFilePath
+        string $credentialsFilePath,
+        float $minimumScore
     ): GoogleCloudVisionInterpreter {
         return new GoogleCloudVisionInterpreter(
-            $credentialsFilePath
+            $credentialsFilePath,
+            $minimumScore
         );
     }
 }
